@@ -9,6 +9,7 @@ import UIKit
 
 class secondViewController: UIViewController {
 
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ImageView: UIImageView!
     
@@ -17,8 +18,10 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ImageView.image = UIImage (named: animals)
+        
+        nameLabel.text = animals
     }
-    
+
 
 
 }
