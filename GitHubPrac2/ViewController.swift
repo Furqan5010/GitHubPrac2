@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
 
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
         (segue.destination as! secondViewController).animals = animals[selectedRow]
     }
