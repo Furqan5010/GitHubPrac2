@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.textColor = .cyan
+//        cell.textLabel?.textColor = .cyan
         cell.textLabel?.text = animals[indexPath.row]// as! String)
         return cell
     }
