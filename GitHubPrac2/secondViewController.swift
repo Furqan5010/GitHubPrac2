@@ -12,7 +12,7 @@ class secondViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ImageView: UIImageView!
     
-    let animals = ["Dog","Cat","Bird" ]
+    var animals = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
