@@ -33,6 +33,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = animals[indexPath.row]// as! String)
         return cell
     }
+
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
+        (segue.destination as! secondViewController).animals = animals[selectedRow]
+    }
     
 }
 
