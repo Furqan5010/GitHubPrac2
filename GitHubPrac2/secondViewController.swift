@@ -16,7 +16,7 @@ class secondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ImageView.image = UIImage (named: animals)
     }
     
 
